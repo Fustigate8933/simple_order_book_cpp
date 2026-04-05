@@ -1,0 +1,38 @@
+[
+  {
+    "directory": "/mnt/ianch-Secondary/Programming/cpp/orderbook",
+    "command": "g++ -std=c++17 -Wall -Wextra -O2 -Iinclude -c src/matching_engine.cpp -o build/matching_engine.o",
+    "file": "src/matching_engine.cpp",
+    "output": "build/matching_engine.o"
+  },
+  {
+    "directory": "/mnt/ianch-Secondary/Programming/cpp/orderbook",
+    "command": "g++ -std=c++17 -Wall -Wextra -O2 -Iinclude -c src/order_book.cpp -o build/order_book.o",
+    "file": "src/order_book.cpp",
+    "output": "build/order_book.o"
+  },
+  {
+    "directory": "/mnt/ianch-Secondary/Programming/cpp/orderbook",
+    "command": "g++ -std=c++17 -Wall -Wextra -O2 -Iinclude -c src/order.cpp -o build/order.o",
+    "file": "src/order.cpp",
+    "output": "build/order.o"
+  },
+  {
+    "directory": "/mnt/ianch-Secondary/Programming/cpp/orderbook",
+    "command": "g++ -std=c++17 -Wall -Wextra -O2 -Iinclude -c src/order_manager.cpp -o build/order_manager.o",
+    "file": "src/order_manager.cpp",
+    "output": "build/order_manager.o"
+  },
+  {
+    "directory": "/mnt/ianch-Secondary/Programming/cpp/orderbook",
+    "command": "g++ -std=c++17 -Wall -Wextra -O2 -Iinclude -c src/price_level.cpp -o build/price_level.o",
+    "file": "src/price_level.cpp",
+    "output": "build/price_level.o"
+  },
+  {
+    "directory": "/mnt/ianch-Secondary/Programming/cpp/orderbook",
+    "command": "g++ -std=c++17 -Wall -Wextra -O2 -Iinclude -c src/trade.cpp -o build/trade.o",
+    "file": "src/trade.cpp",
+    "output": "build/trade.o"
+  }
+]

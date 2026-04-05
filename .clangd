@@ -1,0 +1,19 @@
+CompileFlags:
+  Add:
+    - "-std=c++17"
+    - "-Iinclude"
+  Remove:
+    - "-W*"
+
+Diagnostics:
+  ClangTidy:
+    Add: 
+      - modernize-*
+      - performance-*
+    Remove:
+      - modernize-use-trailing-return-type
+
+InlayHints:
+  Enabled: Yes
+  ParameterNames: Yes
+  DeducedTypes: Yes
