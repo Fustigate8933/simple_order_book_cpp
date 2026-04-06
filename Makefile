@@ -10,10 +10,22 @@ SRCS = $(wildcard $(SRC_DIR)/*.cpp)
 OBJS = $(SRCS:$(SRC_DIR)/%.cpp=$(BUILD_DIR)/%.o)
 
 TARGET = $(BUILD_DIR)/liborderbook.a
+DEMO = $(BUILD_DIR)/demo
+DEMO_THREADING = $(BUILD_DIR)/demo_threading
 
-.PHONY: all clean compile_commands
+.PHONY: all clean compile_commands demo demo_threading
 
 all: $(BUILD_DIR) $(TARGET) compile_commands.json
+
+demo: $(DEMO)
+
+demo_threading: $(DEMO_THREADING)
+
+$(DEMO): demo.cpp $(TARGET)
+	$(CXX) $(CXXFLAGS) demo.cpp -o $@ -L$(BUILD_DIR) -lorderbook
+
+$(DEMO_THREADING): demo_threading.cpp $(TARGET)
+	$(CXX) $(CXXFLAGS) -pthread demo_threading.cpp -o $@ -L$(BUILD_DIR) -lorderbook
 
 $(BUILD_DIR):
 	mkdir -p $(BUILD_DIR)
